@@ -19,6 +19,7 @@ class Hare:
 	def draw(self):
 		x = self.pos[0]
 		y = self.pos[1]
+		#Outer ears
 		p1 = [x-50, y]
 		p2 = [x-50, y-80]
 		p3 = [x, y-50]
@@ -26,7 +27,7 @@ class Hare:
 		p4 = [x+50, y-80]
 		p5 = [x+50, y]
 		pygame.draw.lines(screen, self.color, False, [p1, p2, p3, p4, p5])
-		pygame.draw.circle(screen, self.color, self.pos, 50, 1)
+		pygame.draw.circle(screen, self.color, self.pos, 50)
 
 pygame.init()
 screen = pygame.display.set_mode((400, 300))
